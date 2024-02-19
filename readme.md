@@ -1,6 +1,42 @@
 # Golden Ratio Project
 ![Golden Ratio Visualization](https://github.com/CryptoPendora/GoldenRatio/blob/main/png.png?raw=true)
 
+# Golden Ratio Calculation in Go
+
+This project demonstrates how to calculate the Golden Ratio using high precision arithmetic in Go. The Golden Ratio, often symbolized as φ (phi), is a well-known mathematical constant with the value \( \frac{1 + \sqrt{5}}{2} \).
+
+## Implementation
+
+The main program calculates the Golden Ratio with a precision of 10,000 bits, ensuring an extremely accurate result. It utilizes the `math/big` package for operations with big floating-point numbers.
+
+### Code Explanation
+
+```go
+package main
+
+import (
+    "fmt"
+    "math/big"
+)
+
+func main() {
+    // Define precision for the calculation
+    prec := uint(10000) // For example, 10000 bits
+
+    // Create big.Float numbers for sqrt(5) with defined precision
+    sqrt5 := new(big.Float).SetPrec(prec).Sqrt(big.NewFloat(5))
+
+    // Create big.Float numbers for 1 and 2 with the same precision
+    one := new(big.Float).SetPrec(prec).SetFloat64(1)
+    two := new(big.Float).SetPrec(prec).SetFloat64(2)
+
+    // Calculate the Golden Ratio: (1 + sqrt(5)) / 2
+    phi := new(big.Float).SetPrec(prec).Quo(new(big.Float).Add(one, sqrt5), two)
+
+    // Print the Golden Ratio with the defined precision
+    fmt.Printf("Golden Ratio: %.*g\n", prec, phi)
+}
+go```
 
 ## Overview
 This project is dedicated to exploring and implementing the Golden Ratio in various fields of mathematics and design. The Golden Ratio, approximately equal to 1.618033988749895, is a fascinating number often found in nature, art, architecture, and even financial markets.
