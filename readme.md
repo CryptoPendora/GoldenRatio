@@ -23,7 +23,7 @@ import (
 func main() {
     // Define precision for the calculation
     prec := uint(10000) // For example, 10000 bits //for my machine can do for 100000 digit a fews sec 
-    but for 1M digit take time arround 20-30 second (	AMD Ryzen 5 Ram 32GB  ) in 1MDIGIT.txt
+    // But for 1M digit take time arround 20-30 second (	AMD Ryzen 5 Ram 32GB  ) in 1MDIGIT.txt
 
     // Create big.Float numbers for sqrt(5) with defined precision
     sqrt5 := new(big.Float).SetPrec(prec).Sqrt(big.NewFloat(5))
