@@ -22,7 +22,7 @@ import (
 
 func main() {
     // Define precision for the calculation
-    prec := uint(10000) // For example, 10000 bits
+    prec := uint(10000) // For example, 10000 bits //for my machine can do for 100000 digit a fews sec but for 1M digit take time arround 20-30 second (	AMD Ryzen 5 Ram 32GB  )
 
     // Create big.Float numbers for sqrt(5) with defined precision
     sqrt5 := new(big.Float).SetPrec(prec).Sqrt(big.NewFloat(5))
@@ -65,14 +65,14 @@ Thank you for your interest in our project and your support!
 
 คำนวณด้วยความแม่นยำสูง (High Precision Calculation):
 
-ส่วนนี้ของโค้ดตั้งค่าความแม่นยำสำหรับการคำนวณเป็น 10000 บิต เพื่อให้ได้ค่า Golden Ratio ที่แม่นยำมากขึ้น
-sqrt5 คือ การคำนวณรากที่สองของ 5 โดยใช้ประเภทข้อมูล big.Float ซึ่งอนุญาตให้มีความแม่นยำสูงในการคำนวณ
+ส่วนนี้ของโค้ดตั้งค่าความแม่นยำสำหรับการคำนวณเป็น 10000 บิต เพื่อให้ได้ค่า Golden Ratio ที่แม่นยำมากขึ้น สำหรับ สำหรับ 1ล้านเลข ใช้เวลาประมาณ 20-30 นาที (	AMD Ryzen 5 Ram 32GB  )
+$`sqrt{5}`$ คือ การคำนวณรากที่สองของ 5 โดยใช้ประเภทข้อมูล big.Float ซึ่งอนุญาตให้มีความแม่นยำสูงในการคำนวณ
 จากนั้นใช้ one (ค่า 1) และ two (ค่า 2) ที่เป็น big.Float พร้อมความแม่นยำเดียวกันในการคำนวณสมการ $`\frac{1+\sqrt{5}}2`$
 ผลลัพธ์คือค่า phi ซึ่งเป็นการคำนวณค่า Golden Ratio ที่มีความแม่นยำสูง
 คำนวณด้วยความแม่นยำปกติ (Standard Precision Calculation):
 
 ในส่วนความคิดเห็นของโค้ด, มีการแสดงวิธีการคำนวณค่า Golden Ratio โดยใช้ความแม่นยำปกติ (ไม่ได้ระบุความแม่นยำเฉพาะเช่น 10000 บิต)
-ใช้ big.Float สำหรับการคำนวณ sqrt5 (รากที่สองของ 5) และคำนวณสมการเดียวกัน 
+ใช้ big.Float สำหรับการคำนวณ $`sqrt{5}`$ (รากที่สองของ 5) และคำนวณสมการเดียวกัน 
 $`\frac{1+\sqrt{5}}2`$
 ​
 โดยใช้ค่า one และ two ที่ไม่ได้ตั้งค่าความแม่นยำเฉพาะ
