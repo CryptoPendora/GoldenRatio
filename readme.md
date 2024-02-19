@@ -5,6 +5,8 @@
 
 This project demonstrates how to calculate the Golden Ratio using high precision arithmetic in Go. The Golden Ratio, often symbolized as φ (phi), is a well-known mathematical constant with the value \( \frac{1 + $\sqrt{5}}{2} \).
 
+\phi = \frac{1 + \sqrt{5}}{2}
+
 ## Implementation
 
 The main program calculates the Golden Ratio with a precision of 10,000 bits, ensuring an extremely accurate result. It utilizes the `math/big` package for operations with big floating-point numbers.
