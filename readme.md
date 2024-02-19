@@ -5,7 +5,7 @@
 
 This project demonstrates how to calculate the Golden Ratio using high precision arithmetic in Go. The Golden Ratio, often symbolized as φ (phi), is a well-known mathematical constant with the value \( \frac{1 + $\sqrt{5}}{2} \).
 
-\phi = \frac{1 + \sqrt{5}}{2}
+$\phi = {1 + $\sqrt{5}}/{2}
 
 ## Implementation
 
@@ -44,7 +44,7 @@ func main() {
 This project is dedicated to exploring and implementing the Golden Ratio in various fields of mathematics and design. The Golden Ratio, approximately equal to 1.618033988749895, is a fascinating number often found in nature, art, architecture, and even financial markets.
 
 ## Visualization
-Included in this repository is an image (`png.png`) that visualizes the Golden Ratio in a creative and insightful manner. This image aims to provide a visual understanding of how the Golden Ratio can be applied and appreciated in different contexts.
+Included in this repository is an image that visualizes the Golden Ratio in a creative and insightful manner. This image aims to provide a visual understanding of how the Golden Ratio can be applied and appreciated in different contexts.
 
 ## Contribution
 If you find this project interesting and would like to support our efforts, we welcome contributions of all kinds, not limited to code or financial donations. Your support enables us to continue our research and create more engaging content.
