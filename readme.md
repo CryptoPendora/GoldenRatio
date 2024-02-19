@@ -1,6 +1,5 @@
 # Golden Ratio Project
-
-![alt text](https://github.com/[CryptoPendora]/[CryptoPendora]/blob/[GoldenRatio]/png.png?raw=true)
+![Golden Ratio Visualization](https://github.com/CryptoPendora/GoldenRatio/blob/main/png.png?raw=true)
 
 
 ## Overview
@@ -24,4 +23,38 @@ Your donations are greatly appreciated and will be used to fund further developm
 For more information, suggestions, or inquiries, feel free to reach out to us. We are always looking for collaboration opportunities and feedback on our work.
 
 Thank you for your interest in our project and your support!
+
+คำนวณด้วยความแม่นยำสูง (High Precision Calculation):
+
+ส่วนนี้ของโค้ดตั้งค่าความแม่นยำสำหรับการคำนวณเป็น 10000 บิต เพื่อให้ได้ค่า Golden Ratio ที่แม่นยำมากขึ้น
+sqrt5 คือ การคำนวณรากที่สองของ 5 โดยใช้ประเภทข้อมูล big.Float ซึ่งอนุญาตให้มีความแม่นยำสูงในการคำนวณ
+จากนั้นใช้ one (ค่า 1) และ two (ค่า 2) ที่เป็น big.Float พร้อมความแม่นยำเดียวกันในการคำนวณสมการ 
+(
+1
++
+5
+)
+/
+2
+(1+ 
+5
+​
+ )/2
+ผลลัพธ์คือค่า phi ซึ่งเป็นการคำนวณค่า Golden Ratio ที่มีความแม่นยำสูง
+คำนวณด้วยความแม่นยำปกติ (Standard Precision Calculation):
+
+ในส่วนความคิดเห็นของโค้ด, มีการแสดงวิธีการคำนวณค่า Golden Ratio โดยใช้ความแม่นยำปกติ (ไม่ได้ระบุความแม่นยำเฉพาะเช่น 10000 บิต)
+ใช้ big.Float สำหรับการคำนวณ sqrt5 (รากที่สองของ 5) และคำนวณสมการเดียวกัน 
+(
+1
++
+5
+)
+/
+2
+(1+ 
+5
+​
+ )/2 โดยใช้ค่า one และ two ที่ไม่ได้ตั้งค่าความแม่นยำเฉพาะ
+ผลลัพธ์จะได้ค่า phi คือค่า Golden Ratio ที่คำนวณด้วยความแม่นยำปกติของประเภทข้อมูล
 
