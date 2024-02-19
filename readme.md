@@ -15,6 +15,7 @@ If you find this project interesting and would like to support our efforts, we w
 To support us with a Bitcoin donation, please send your contributions to the following Bitcoin address:
 
 16HXFqHMwFEkubWAmhmiT8W1jDWunV8Ajk
+###
 ![BTC](https://github.com/CryptoPendora/GoldenRatio/blob/main/CP.png?raw=true)
 
 
